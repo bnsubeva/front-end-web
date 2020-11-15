@@ -1,0 +1,37 @@
+var A=[10,5,13,18,51];
+
+ for (var i in A) 
+     {
+      console.log(A[i]);
+     }
+	 
+	 var B=new Array(A.length);
+	 
+	
+	 A.forEach(function(element,index)
+          {
+    B[index]=2*element;})
+console.log(B);
+
+A = A.filter(function (element) {
+    return element % 2 === 0;
+})
+console.log(A);
+
+ A=[10,5,13,18,51];
+ var result=false;
+A.forEach(function(element){if(element<10) result=true;})
+console.log(result);
+
+A = A.filter(function (element) {
+    return element % 3=== 0;
+})
+
+ A=[10,5,13,18,51];
+ const reducer = (accumulator, currentValue) => accumulator + currentValue;
+ console.log(A.reduce(reducer));
+ 
+  var C=A.slice(A.length-2,A.length);
+ console.log(C);
+ 
+ 
