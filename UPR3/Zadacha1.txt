@@ -31,6 +31,7 @@ A = A.filter(function (element) {
  const reducer = (accumulator, currentValue) => accumulator + currentValue;
  console.log(A.reduce(reducer));
  
+   A=[10,5,13,18,51];
   var C=A.slice(A.length-2,A.length);
  console.log(C);
  
