@@ -1,0 +1,18 @@
+class Person {
+static planet="Zemya";
+constructor(name)
+{
+this.name=name;
+}
+printFoo()
+{
+ console.log(`Zdravey ${this.name} ot planetata ${Person.planet}`);
+}
+}
+var person1 = new Person("Chuck Noris");
+var person2 = new Person("Ivan");
+var person3 = new Person("Andrey");
+
+person1.printFoo();
+person2.printFoo();
+person3.printFoo();
