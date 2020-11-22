@@ -1,0 +1,20 @@
+ class Item {
+    constructor(name, discount) {
+        this.price = this.getPrice();
+        this.name = name;
+        this.discount = discount;
+    }
+
+    calculate() {
+        return this.price - (this.price * this.discount) / 100;
+    }
+	getPrice() {
+    return 1000;
+}
+}
+
+ 
+
+let stock = new Item("stock", 10);
+let stockPrice = stock.calculate();
+console.log(stockPrice);

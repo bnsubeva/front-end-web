@@ -1,0 +1,11 @@
+   
+function Person(salary) {
+    var _salary = salary;
+
+    this.getSecretSalaryInfo = function () {
+        return _salary;
+    }
+}
+
+var person = new Person(1000);
+console.log(person.getSecretSalaryInfo());  
