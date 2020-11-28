@@ -1,0 +1,404 @@
+html, body {
+	font-size: 16px;
+	background: linear-gradient(-100deg,#A2F2F1 0%, #B19AFE 100%);
+	height: 100%;
+}
+
+* {
+	font-family: Helvetica,sans-serif;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: auto;
+	height: 1.8rem;
+	padding: 0.5rem 2rem;
+	margin: 0;
+	background-color: white;
+}
+
+.header-title {
+	float: left;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: #1B1B1B;
+}
+
+.search-wrapper {
+	float: right;
+	line-height: 2rem;
+	height: 2rem;
+}
+
+.search-wrapper input {
+	height: 1.5rem;
+	color: #777;
+	padding: 0 1.8rem 0 0.5rem;
+	border: 1px solid #EEEFFC;
+	background-color: #F6F7FD;
+	border-radius: 12rem;
+}
+.search-wrapper input:focus,
+.search-wrapper input:hover,
+.search-wrapper input:active {
+	border: 1px solid #EEEFFC;
+	outline: none;
+}
+
+.search-wrapper img {
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-left: -1.5rem;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.content {
+	position: absolute;
+	top: 3.5rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 74rem;
+	min-width: 74rem;
+	height: 20rem;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.left-pane {
+	position: absolute;
+	max-width: 18rem;
+	width: 18rem;
+	height: 12rem;
+	left: 0;
+	right: auto;
+	bottom: auto;
+	top: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.left-pane .avatar {
+	display: block;
+	margin: auto;
+	width: 5.25rem;
+	height: 5.25rem;
+}
+
+.left-pane h4 {
+	text-align: center;
+	margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.left-pane-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: auto;
+	height: 3.75rem;
+	padding: 0;
+	margin: 0;
+	background-color: #F6F7FD;
+	display: flex;
+}
+
+.left-pane-footer > div {
+	font-weight: bold;
+}
+
+.left-pane-footer .label {
+	color: #7D7F8D;
+	font-size: 0.75rem;
+	text-align: left;
+	padding: 0.9rem 0 0 1rem;
+}
+
+.left-pane-footer .count {
+	color: #5DC0D8;
+	font-size: 1.125rem;
+	text-align: left;
+	padding: 0 0.3rem 0 1rem;
+}
+
+.left-pane-footer-posts,
+.left-pane-footer-reactions {
+	width: 25%;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	height: 3.75rem;
+}
+
+.left-pane-footer-logout {
+	text-align: right;
+	width: 50%;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	height: 3.75rem;
+}
+
+.logout-button {
+	display: inline-block;
+ 	color: #5DC0D8;
+	border-radius: 16px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	height: 1rem;
+	border: 1px solid #5DC0D8;
+	background-color: transparent;
+	text-decoration: none;
+	padding: 0.4rem;
+  margin: 0.9rem 1rem 0 0;
+}
+
+.logout-button:hover {
+	background-color: rgb(93 192 216 / 8%);
+}
+
+.right-pane {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	left: auto;
+	width: 55rem;
+	max-width: 55rem;
+	height: 20rem;
+	background-color: white;
+}
+
+.right-pane .new-comment {
+	width: 100%;
+	height: 3rem;
+	background-color: #F4FCFD;
+	display: flex;
+}
+
+.right-pane .new-comment .new-comment-avatar {
+	height: 100%;
+	width: 8%;
+	display: flex;
+	justify-content: center;
+}
+
+.right-pane .new-comment .new-comment-avatar img.avatar {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+  padding: 0.5rem;
+}
+
+.right-pane .new-comment .new-comment-content {
+	width: 92%;
+	text-align: left;
+}
+
+.right-pane .new-comment .new-comment-content .new-comment-input {
+	line-height: 3rem;
+	height: 3rem;
+}
+
+.right-pane .new-comment .new-comment-content .new-comment-input input {
+	width: 89%;
+	height: 1.8rem;
+	color: #53BFD7;
+	padding: 0 1.8rem 0 0.5rem;
+	border: 1px solid #EEEFFC;
+	background-color: white;
+	border-radius: 12rem;
+}
+
+.right-pane .new-comment .new-comment-content .new-comment-input input::placeholder {
+	color: #53BFD7;
+}
+
+.right-pane .new-comment .new-comment-content .new-comment-input input:focus,
+.right-pane .new-comment .new-comment-content .new-comment-input input:hover,
+.right-pane .new-comment .new-comment-content .new-comment-input input:active {
+	border: 1px solid #EEEFFC;
+	outline: none;
+}
+
+.right-pane .new-comment .new-comment-content .new-comment-input img.text-buble-icon {
+	width: 0.9rem;
+	height: 0.9rem;
+	margin-left: -2rem;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.right-pane .user-comment {
+	width: 100%;
+	border-top: 1px solid #E7EEEF;
+	min-height: 4rem;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.right-pane .user-comment .user-comment-avatar {
+	height: 100%;
+	width: 8%;
+	display: flex;
+	justify-content: center;
+}
+
+.right-pane .user-comment .user-comment-avatar img.avatar {
+	display: block;
+	width: 2.5rem;
+	height: 2.5rem;
+  padding: 0.75rem;
+}
+
+.right-pane .user-comment .user-comment-header {
+	width: 100%;
+	height: 1.2rem;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-name {
+	font-size: 1rem;
+	font-weight: bold;
+	float: left;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-last-seen {
+	font-size: 0.8rem;
+	float: left;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-last-seen ul {
+	margin: 0;
+	padding: 0 1.5rem;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-last-seen ul li {
+	margin: 0;
+	color: #8B8D99;
+	padding: 0;
+
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-last-seen ul span {
+	position: relative;
+	left: -0.5rem;
+	line-height: 1.2rem;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-delete-button {
+	float: right;
+	width: 0.7rem;
+	height: 0.7rem;
+	cursor: pointer;
+}
+
+.right-pane .user-comment .user-comment-header .user-comment-delete-button img {
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+.right-pane .user-comment .user-comment-content {
+	width: 90%;
+  padding: 0.9rem 0.8rem 0 0;
+}
+
+.right-pane .user-comment .user-comment-text {
+	font-size: 0.8rem;
+	width: 98%;
+  min-height: 3rem;
+}
+
+.right-pane .user-comment .user-comment-footer {
+	width: 100%;
+	height: 2rem;
+	display: flex;
+}
+
+
+.right-pane .user-comment .user-comment-footer .user-comment-like-button {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-top: 0.4rem;
+}
+
+.right-pane .user-comment .user-comment-footer .user-comment-dislike-button {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 3rem;
+  margin-top: 0.4rem;
+}
+
+.right-pane .user-comment .user-comment-footer div.count {
+	font-size: 0.9rem;
+	height: 2rem;
+	line-height: 1.8rem;
+  padding: 0 0.2rem;
+}
+
+.right-pane .user-comment .user-comment-footer img {
+	width: 1.2rem;
+	height: 1.2rem;
+	cursor: pointer;
+}
+
+
+@media (max-width: 890px) {
+	html, body {
+		margin: 0;
+	}
+
+	.header {
+		position: inherit;
+	}
+
+	.content {
+		margin-top: 0.5rem;
+		position: inherit;
+		width: 90%;
+		max-width: 90%;
+		min-width: 90%;
+		height: auto;
+	}
+
+	.left-pane {
+		position: inherit;
+		width: 100%;
+		height: 12rem;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.left-pane-footer {
+		position: inherit;
+	}
+
+	.right-pane {
+		position: inherit;
+		width: 100%;
+		max-width: 100%;
+		height: 20rem;
+	}
+
+	.right-pane .new-comment .new-comment-avatar {
+		width: 16%;
+	}
+
+	.right-pane .new-comment .new-comment-content .new-comment-input input {
+		width: 84%;
+	}
+
+	.right-pane .user-comment .user-comment-avatar {
+		width: 15%;
+	}
+
+	.right-pane .user-comment .user-comment-content {
+		width: 85%;
+	}
+}
