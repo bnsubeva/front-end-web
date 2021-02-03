@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="sign-in.css">
+   </head>
+   <body>
+      <span class="headerHolder">
+         <h1 class="header">Boutique Bellissima</h1>
+      </span>
+      <span class="buttons">
+      <span class="homeButton"><button onclick="location.href='./home.html'" type="button" class="buttonText">Home</button></span>
+      <span class="contactUsButton">
+      <button onclick="location.href='./about-us.html'" type="button"  class="buttonText">About Us
+      </button>
+      </span>
+      <span class="signInButton">
+      <button onclick="location.href='./sign-in.html'" type="button" class="buttonText">Sign in
+      </button>
+      </span>
+      </span>
+      <div class="loginWrapper">
+         <div class="login">
+            <h2 class="name">Login</h2>
+            <form class="auth-form" id="login-form">
+               <label for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+               <button type="submit">Login</button>
+               <label>
+                 <input type="checkbox" checked="checked" name="remember">Remember me
+               </label>
+            </form>
+            <button type="button" onclick="location.href='./register.html'" type="button" class="register">Register</button>
+            <div id="errors"></div>
+         </div>
+      </div>
+   </body>
+   <script src="sign-in.js"></script>
+   <footer>
+      <p> ©2021 by Bella Sabeva</p>
+   </footer>
+</html>
