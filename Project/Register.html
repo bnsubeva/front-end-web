@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="register.css"/>
+   </head>
+   <body>
+      <span class="headerHolder">
+         <h1 class="header">Boutique Bellissima</h1>
+      </span>
+      <span class="buttons">
+      <span class="homeButton"><button onclick="location.href='./home.html'" type="button" class="buttonText">Home</button></span>
+      <span class="contactUsButton">
+      <button  onclick="location.href='./aboutUs.html'" type="button"  class="buttonText">About Us 
+      </button>
+      </span>
+      <span class="signInButton">
+      <button  onclick="location.href='./signIn.html'" type="button" class="buttonText">Sign in 
+      </button>
+      </span>
+      </span>
+      <div class="registerWrapper">
+         <div class="register">
+            <h1 class="name">Register</h1>
+            <form class="auth-form" id="register-form">
+               <label for="email"><b>Email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" id="email" required>
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+               <label for="psw-repeat"><b>Repeat Password</b></label>
+               <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+               <div class="container">
+                  <button type="submit" class="registerbtn">Register</button>
+                  <p>Already have an account? <a href="./SignIn.html">Sign in</a>.</p>
+               </div>
+            </form>
+         </div>
+      </div>
+      </div>
+      <footer>
+         <p> ©2021 by Bella Sabeva</p>
+      </footer>
+</html>
