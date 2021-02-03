@@ -99,7 +99,7 @@ footer {
 	}
 	.buttons {
 		padding-left: 20%;
-		z-index: 6;
+		z-index: 15;
 	}
 	.homeImageHolder {
 		width: 100%;
@@ -114,6 +114,7 @@ footer {
 		position: absolute;
 		top: -50px;
 		left: 150px;
+		margin-top:50px;
 	}
 	.home {
 		width: 100%;
