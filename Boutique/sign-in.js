@@ -2,7 +2,7 @@
 
 (function() {
 	var users = [];
-	var readJsonFile = function(url) {
+	var fetchUsers = function(url) {
 		var oReq = new XMLHttpRequest();
 		oReq.addEventListener('load', function() {
 			var that = this;
@@ -20,8 +20,8 @@
 	}
 
 	// Test default API
-	// readJsonFile('https://my-json-server.typicode.com/typicode/demo/db/');
-	readJsonFile('http://my-json-server.typicode.com/bnsubeva/front-end-web/db/');
+	// fetchUsers('https://my-json-server.typicode.com/typicode/demo/db/');
+	fetchUsers('http://my-json-server.typicode.com/bnsubeva/front-end-web/db/');
 
 	var formLogin = document.getElementById('login-form');
 	if (formLogin) {
