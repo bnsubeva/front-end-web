@@ -25,7 +25,7 @@
 
 	var formLogin = document.getElementById('login-form');
 	if (formLogin) {
-		formLogin.addEventListener('submit', function() {
+		formLogin.addEventListener('submit', function(event) {
 			event.preventDefault();
 
 			var isValid = false;

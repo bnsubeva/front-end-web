@@ -24,7 +24,7 @@
 
 	var form = document.getElementById('register-form');
 	if (form) {
-		form.addEventListener("submit", function() {
+		form.addEventListener("submit", function(event) {
 			event.preventDefault(); 
 			if (validate()) {
 				document.getElementById("errors").innerText = "Registered Succesfully!";
